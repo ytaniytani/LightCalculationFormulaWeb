@@ -1,0 +1,94 @@
+/* =========================================================================
+   ライト計算式ラボ — グローバルスタイル(ダークトーン基調)
+   デザイントークンは CSS 変数に集約し、配色変更を一箇所で行えるようにする。
+   ========================================================================= */
+
+:root {
+  /* 背景(暗い→やや明るい の階調) */
+  --bg-0: #0d1017;
+  --bg-1: #141925;
+  --bg-2: #1c2333;
+  --bg-3: #262f43;
+
+  /* 文字 */
+  --text-0: #eef2fb;
+  --text-1: #b9c2d6;
+  --text-2: #7d879c;
+
+  /* アクセント(光=暖色、数学=寒色 でメタファを分ける) */
+  --accent: #ffcc66; /* 光・ハイライト */
+  --accent-2: #6fb3ff; /* 数学・ベクトル */
+  --accent-3: #7ee0b0; /* 正解・OK */
+  --danger: #ff7a7a;
+
+  --border: #2c3547;
+  --border-strong: #3c485f;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+
+  --font-sans: system-ui, -apple-system, 'Segoe UI', 'Hiragino Kaku Gothic ProN',
+    'Noto Sans JP', Meiryo, sans-serif;
+  --font-mono: 'SFMono-Regular', Menlo, Consolas, 'Roboto Mono', monospace;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-0);
+  color: var(--text-0);
+  font-family: var(--font-sans);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--accent-2);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.35;
+  color: var(--text-0);
+}
+
+code {
+  font-family: var(--font-mono);
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  font-size: 0.9em;
+}
+
+/* KaTeX を暗背景で読みやすく */
+.katex {
+  color: var(--text-0);
+  font-size: 1.08em;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: rgba(111, 179, 255, 0.35);
+}
