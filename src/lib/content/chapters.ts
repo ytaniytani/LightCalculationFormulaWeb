@@ -10,7 +10,7 @@ export interface Chapter {
   title: string;
   summary: string;
   difficulty: Difficulty;
-  group: '準備(数学)' | '直接光' | '間接光' | '発展';
+  group: '準備(数学)' | '直接光' | '間接光' | '光の単位' | '発展';
   status: 'ready' | 'planned';
 }
 
@@ -115,8 +115,17 @@ export const chapters: Chapter[] = [
     status: 'ready',
   },
   {
-    id: 'advanced',
+    id: 'units',
     no: 11,
+    title: '光の単位',
+    summary: 'ルーメン・カンデラ・ルクス・ニット・ケルビン。各単位の意味と関係を体験。',
+    difficulty: 2,
+    group: '光の単位',
+    status: 'ready',
+  },
+  {
+    id: 'advanced',
+    no: 12,
     title: '発展',
     summary: 'スペキュラIBL、トーンマッピング、影の基礎など。',
     difficulty: 3,

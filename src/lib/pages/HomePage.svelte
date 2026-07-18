@@ -2,11 +2,12 @@
   import { chapters, type Chapter } from '../content/chapters';
   import DifficultyBadge from '../components/DifficultyBadge.svelte';
 
-  const groups: Chapter['group'][] = ['準備(数学)', '直接光', '間接光', '発展'];
+  const groups: Chapter['group'][] = ['準備(数学)', '直接光', '間接光', '光の単位', '発展'];
   const groupInfo: Record<Chapter['group'], { icon: string; desc: string }> = {
     '準備(数学)': { icon: '🧮', desc: '中学数学から。関数・カーブ・ベクトル・内積をゼロから。' },
     直接光: { icon: '💡', desc: 'ライトから直接届く光の反射。Lambert から PBR の BRDF まで。' },
     間接光: { icon: '🌤️', desc: '跳ね返って回り込む光。スカイライトと SH ライトプローブ。' },
+    光の単位: { icon: '📏', desc: 'ルーメン・カンデラ・ルクス・ニット・ケルビン。現実の光の測り方。' },
     発展: { icon: '🚀', desc: 'スペキュラIBL・トーンマッピング・影の基礎など。' },
   };
 

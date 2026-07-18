@@ -12,6 +12,7 @@
   import BrdfChapter from './chapters/BrdfChapter.svelte';
   import IndirectChapter from './chapters/IndirectChapter.svelte';
   import ShChapter from './chapters/ShChapter.svelte';
+  import UnitsChapter from './chapters/UnitsChapter.svelte';
   import AdvancedChapter from './chapters/AdvancedChapter.svelte';
 
   let { id }: { id: string } = $props();
@@ -31,6 +32,7 @@
     brdf: BrdfChapter,
     indirect: IndirectChapter,
     sh: ShChapter,
+    units: UnitsChapter,
     advanced: AdvancedChapter,
   };
   const Content = $derived(contentMap[id]);
