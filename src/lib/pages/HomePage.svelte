@@ -67,8 +67,8 @@
 
   <footer class="foot">
     <p>
-      現在はM1(基盤)段階。<strong>第2章・第3章・第5章</strong>の中核デモが動きます。
-      仕様は <code>docs/SPEC.md</code> を参照。
+      全12章(第0〜11章)を公開中。数の復習から Lambert・スペキュラー・PBR/BRDF、
+      間接光(スカイライト・SH)まで、通しで触れます。仕様は <code>docs/SPEC.md</code> を参照。
     </p>
   </footer>
 </div>

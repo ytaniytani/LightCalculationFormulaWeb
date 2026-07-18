@@ -1,9 +1,18 @@
 <script lang="ts">
   import { chapters, chapterById } from '../content/chapters';
   import DifficultyBadge from '../components/DifficultyBadge.svelte';
+  import IntroChapter from './chapters/IntroChapter.svelte';
+  import NumbersChapter from './chapters/NumbersChapter.svelte';
   import CurvesChapter from './chapters/CurvesChapter.svelte';
   import VectorsChapter from './chapters/VectorsChapter.svelte';
+  import ActorsChapter from './chapters/ActorsChapter.svelte';
   import DiffuseChapter from './chapters/DiffuseChapter.svelte';
+  import SpecularChapter from './chapters/SpecularChapter.svelte';
+  import PbrChapter from './chapters/PbrChapter.svelte';
+  import BrdfChapter from './chapters/BrdfChapter.svelte';
+  import IndirectChapter from './chapters/IndirectChapter.svelte';
+  import ShChapter from './chapters/ShChapter.svelte';
+  import AdvancedChapter from './chapters/AdvancedChapter.svelte';
 
   let { id }: { id: string } = $props();
 
@@ -11,9 +20,18 @@
 
   // 実装済み章のコンテンツを id で解決
   const contentMap: Record<string, typeof CurvesChapter> = {
+    intro: IntroChapter,
+    numbers: NumbersChapter,
     curves: CurvesChapter,
     vectors: VectorsChapter,
+    actors: ActorsChapter,
     diffuse: DiffuseChapter,
+    specular: SpecularChapter,
+    pbr: PbrChapter,
+    brdf: BrdfChapter,
+    indirect: IndirectChapter,
+    sh: ShChapter,
+    advanced: AdvancedChapter,
   };
   const Content = $derived(contentMap[id]);
 

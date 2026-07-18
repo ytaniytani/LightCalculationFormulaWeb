@@ -22,7 +22,7 @@ export const chapters: Chapter[] = [
     summary: 'ライティングとは「光がどう跳ね返って目に届くか」の計算。ゴールの絵を先に見る。',
     difficulty: 1,
     group: '準備(数学)',
-    status: 'planned',
+    status: 'ready',
   },
   {
     id: 'numbers',
@@ -31,7 +31,7 @@ export const chapters: Chapter[] = [
     summary: '0〜1の明るさ、マイナス、座標、グラフの読み方、関数=入力→出力の箱。',
     difficulty: 1,
     group: '準備(数学)',
-    status: 'planned',
+    status: 'ready',
   },
   {
     id: 'curves',
@@ -58,7 +58,7 @@ export const chapters: Chapter[] = [
     summary: '法線N・ライトL・視線V・ハーフH・反射R。ライトの種類と減衰。',
     difficulty: 3,
     group: '直接光',
-    status: 'planned',
+    status: 'ready',
   },
   {
     id: 'diffuse',
@@ -76,7 +76,7 @@ export const chapters: Chapter[] = [
     summary: 'Phong / Blinn-Phong。ハイライトが絞られる仕組み。',
     difficulty: 3,
     group: '直接光',
-    status: 'planned',
+    status: 'ready',
   },
   {
     id: 'pbr',
@@ -85,7 +85,7 @@ export const chapters: Chapter[] = [
     summary: 'エネルギー保存、マイクロファセット、フレネル、メタリック/ラフネス。',
     difficulty: 3,
     group: '直接光',
-    status: 'planned',
+    status: 'ready',
   },
   {
     id: 'brdf',
@@ -94,7 +94,7 @@ export const chapters: Chapter[] = [
     summary: 'BRDF=2方向を入れると反射率を返す箱。D・F・Gを1項ずつ。',
     difficulty: 3,
     group: '直接光',
-    status: 'planned',
+    status: 'ready',
   },
   {
     id: 'indirect',
@@ -103,7 +103,7 @@ export const chapters: Chapter[] = [
     summary: '直接光だけだとのっぺりする理由。アンビエントとスカイライト。',
     difficulty: 3,
     group: '間接光',
-    status: 'planned',
+    status: 'ready',
   },
   {
     id: 'sh',
@@ -112,7 +112,7 @@ export const chapters: Chapter[] = [
     summary: '周囲の光を数個の係数に「要約」する球面調和関数の直感。',
     difficulty: 3,
     group: '間接光',
-    status: 'planned',
+    status: 'ready',
   },
   {
     id: 'advanced',
@@ -121,7 +121,7 @@ export const chapters: Chapter[] = [
     summary: 'スペキュラIBL、トーンマッピング、影の基礎など。',
     difficulty: 3,
     group: '発展',
-    status: 'planned',
+    status: 'ready',
   },
 ];
 
